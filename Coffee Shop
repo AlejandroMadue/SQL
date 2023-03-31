@@ -1,0 +1,21 @@
+CREATE TABLE CoffeeShop (id INTEGER PRIMARY KEY, name TEXT, roast TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO CoffeeShop VALUES
+( 1, "Italian", "Dark", 5, 25),
+(2, "French", "Dark", 4, 20),
+(3, "Sumatra", "Dark", 6, 30),
+(4, "Oaxaca", "Medium", 10, 50),
+(5, "Ethiopia", "Medium", 6, 30),
+(6, "Veranda", "Blonde", 4, 20),
+(7, "Verona", "Dark", 4, 20),
+(8, "Veracruz", "Medium", 7, 35),
+(9, "Colombia", "Medium", 5, 25),
+(10, "Guatemala", "Medium", 7, 35),
+(11, "Rwanda", "Medium", 8, 40),
+(12, "Kona", "Medium", 5, 25),
+(13, "Ka'u", "Medium", 5,25),
+(14, "Vietnam", "Blonde", 6, 30),
+(15, "Ecuador", "Medium", 4, 20);
+
+SELECT SUM(price) FROM CoffeeShop;
+SELECT * FROM CoffeeShop ORDER BY price desc;
